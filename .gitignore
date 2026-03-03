@@ -1,0 +1,34 @@
+# --- Data & Results ---
+*.h5ad
+*.h5
+*.csv
+*.tsv
+*.mtx
+*.gz
+01_data/
+03_figures/
+04_results/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+pip-log.txt
+setup.cfg
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- VS Code & Windows ---
+.vscode/
+.history/
+*.log
+Thumbs.db
+desktop.ini
+
+# --- Conda ---
+.conda/
+conda-meta/
+env/
+venv/
