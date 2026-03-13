@@ -4,6 +4,8 @@
 *.mtx
 *.gz
 01_data/
+04_results/05_pathway_enrichment/01_pathway_enrichment_upregulated/01_enrichr_results/
+04_results/05_pathway_enrichment/02_pathway_enrichment_downregulated/01_enrichr_results/
 
 # --- Python ---
 __pycache__/
