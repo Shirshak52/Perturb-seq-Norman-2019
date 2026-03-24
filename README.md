@@ -1,4 +1,4 @@
-# End-to-End Perturb-seq Analysis of CEBPE-Driven Granulocytic Differentiation in K562 Cells
+# Perturb-seq Analysis: CEBPE-Driven Granulocytic Differentiation in K562 Cells (Norman 2019)
 
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-3776ab.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
