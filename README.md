@@ -1,4 +1,4 @@
-# CRISPR-MOD: End-to-End Perturb-seq Analysis of CEBPE-Driven Granulocytic Differentiation in K562 Cells
+# End-to-End Perturb-seq Analysis of CEBPE-Driven Granulocytic Differentiation in K562 Cells
 
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-3776ab.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
