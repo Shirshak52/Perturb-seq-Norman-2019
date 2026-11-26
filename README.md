@@ -1,9 +1,9 @@
-# Perturb-seq Analysis: CEBPE-Driven Granulocytic Differentiation in K562 Cells (Norman et al. 2019)
+# Single-Cell RNA-seq Count Matrix Analysis: <br> Effects of `CEBPE` Overactivation in Chronic Myeloid Leukemia Cells <br> *(Norman et al., 2019 K562 Perturb-seq)*
 
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-3776ab.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**End-to-end single-cell Perturb-seq analysis pipeline** applied to the **Norman et al. 2019 K562 CRISPRa dataset**, focusing on **CEBPE overactivation**. Covers quality control, preprocessing, clustering, differential expression, and pathway enrichment analysis, demonstrating the complete computational biologist workflow for CRISPR screen data.
+Analysis of the **Norman et al. 2019 K562 CRISPRa single-cell Perturb-seq count matrix**, focusing on **CEBPE overactivation** effects on the **K562 Chronic Myeloid Leukemia (CML) cell line**. Covers quality control, preprocessing, clustering (exploratory analysis), differential expression, and pathway enrichment analysis, concluding with biological interpretation.
 
 ## Key Results
 
@@ -91,7 +91,7 @@ Execute notebooks sequentially (01 → 05). Each notebook saves intermediate out
 
 ## Method Overview
 
-### Pipeline Architecture
+### Analysis Workflow
 - **QC and Cleaning:** Scrublet doublet detection, mitochondrial gene filtering, count-based cell filtering
 - **Preprocessing:** CP10K normalization → log1p transformation → 3,000 HVGs
 - **Clustering:** PCA (50 components) → UMAP generation → Tirosh et al. 2016 cell cycle scoring
@@ -99,7 +99,11 @@ Execute notebooks sequentially (01 → 05). Each notebook saves intermediate out
 - **Pathway Enrichment:** ORA via Enrichr on upregulated and downregulated gene lists separately
 
 ### Analytical Focus
-Analysis is restricted to CEBPE perturbation vs Control — chosen for its known role as a master regulator of granulocytic differentiation, making it an ideal case study for validating the complete pipeline against established biology.
+Analysis is **restricted to CEBPE perturbation vs Control**.
+
+After visual inspection of UMAPs for the top perturbations by cell count, **CEBPE showed the most distinct separation on the UMAP colored by perturbation**, and its structure most closely matched the UMAPs colored by cell-cycle phase and Leiden cluster. CEBPE is also a **known master regulator of granulocytic differentiation**, which fits the CML context.
+
+Because the perturbation was chosen **after inspecting the UMAPs**, the subsequent DE and enrichment results are **exploratory**, not a pre-specified hypothesis test.
 
 ## Key Findings
 
@@ -120,7 +124,7 @@ CEBPE overactivation in K562 CML cells activates a granulocytic differentiation 
 
 **Random seed:** 42 throughout for deterministic results
 
-**Expected runtime:** ~30 minutes for complete pipeline
+**Expected runtime:** ~30 minutes for complete analysis
 - QC + preprocessing: ~10 minutes
 - Clustering: ~10 minutes  
 - DE analysis: ~5 minutes
@@ -148,8 +152,8 @@ If you use this pipeline in your research, please cite the original dataset:
 ## Contact
 
 - **Author:** Shirshak Aryal
-- **Email:** shirshak.acad@gmail.com
-- **Issues:** [GitHub Issues](https://github.com/Shirshak52/CRISPR-MOD/issues)
+- **Email:** [shirshak.acad@gmail.com](mailto:shirshak.acad@gmail.com)
+- **LinkedIn:** [linkedin.com/in/shirshak52/](https://www.linkedin.com/in/shirshak52/)
 
 ## License
 
